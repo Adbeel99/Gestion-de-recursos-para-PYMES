@@ -1,0 +1,261 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|c:\\projects\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|solutionrelative:gestion-de-recursos-para-pymes\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|c:\\projects\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|solutionrelative:gestion-de-recursos-para-pymes\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|c:\\projects\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|solutionrelative:gestion-de-recursos-para-pymes\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|c:\\projects\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|solutionrelative:gestion-de-recursos-para-pymes\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|c:\\projects\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|solutionrelative:gestion-de-recursos-para-pymes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|c:\\projects\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|solutionrelative:gestion-de-recursos-para-pymes\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|c:\\projects\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|solutionrelative:gestion-de-recursos-para-pymes\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|c:\\projects\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|solutionrelative:gestion-de-recursos-para-pymes\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|c:\\projects\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\areas\\identity\\pages\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|solutionrelative:gestion-de-recursos-para-pymes\\areas\\identity\\pages\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|c:\\projects\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\areas\\identity\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|solutionrelative:gestion-de-recursos-para-pymes\\areas\\identity\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|c:\\projects\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|solutionrelative:gestion-de-recursos-para-pymes\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|c:\\projects\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|solutionrelative:gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|c:\\projects\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\data\\migrations\\20260223043610_addroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|solutionrelative:gestion-de-recursos-para-pymes\\data\\migrations\\20260223043610_addroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|c:\\projects\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\data\\migrations\\20260223040302_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|solutionrelative:gestion-de-recursos-para-pymes\\data\\migrations\\20260223040302_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|c:\\projects\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\areas\\identity\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|solutionrelative:gestion-de-recursos-para-pymes\\areas\\identity\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 262,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Gestion-de-recursos-para-PYMES\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-23T22:08:28.737Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ToolTip": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeToolTip": "Gestion-de-recursos-para-PYMES\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAGIAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T21:22:17.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeToolTip": "Gestion-de-recursos-para-PYMES\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-23T05:24:41.999Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Gestion-de-recursos-para-PYMES\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-23T05:21:04.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "Gestion-de-recursos-para-PYMES\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-23T05:11:09.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeToolTip": "Gestion-de-recursos-para-PYMES\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAUwIIAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T04:54:11.495Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "Gestion-de-recursos-para-PYMES\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-23T04:54:09.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "Gestion-de-recursos-para-PYMES\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-23T04:53:53.828Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
+              "ToolTip": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
+              "RelativeToolTip": "Gestion-de-recursos-para-PYMES\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-23T04:53:52.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ScaffoldingReadMe.txt",
+              "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\ScaffoldingReadMe.txt",
+              "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\ScaffoldingReadMe.txt",
+              "ToolTip": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\ScaffoldingReadMe.txt",
+              "RelativeToolTip": "Gestion-de-recursos-para-PYMES\\ScaffoldingReadMe.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-02-23T04:53:28.966Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Gestion-de-recursos-para-PYMES.csproj",
+              "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj",
+              "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj",
+              "ToolTip": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj",
+              "RelativeToolTip": "Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-23T04:50:31.452Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "20260223043610_AddRoles.cs",
+              "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Data\\Migrations\\20260223043610_AddRoles.cs",
+              "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Data\\Migrations\\20260223043610_AddRoles.cs",
+              "ToolTip": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Data\\Migrations\\20260223043610_AddRoles.cs",
+              "RelativeToolTip": "Gestion-de-recursos-para-PYMES\\Data\\Migrations\\20260223043610_AddRoles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T04:36:10.47Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "20260223040302_InitialCreate.cs",
+              "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Data\\Migrations\\20260223040302_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Data\\Migrations\\20260223040302_InitialCreate.cs",
+              "ToolTip": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Data\\Migrations\\20260223040302_InitialCreate.cs",
+              "RelativeToolTip": "Gestion-de-recursos-para-PYMES\\Data\\Migrations\\20260223040302_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T04:03:02.404Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Program.cs",
+              "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Program.cs",
+              "ToolTip": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Program.cs",
+              "RelativeToolTip": "Gestion-de-recursos-para-PYMES\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFIAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T03:48:55.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "ToolTip": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "RelativeToolTip": "Gestion-de-recursos-para-PYMES\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-23T03:46:43.529Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
