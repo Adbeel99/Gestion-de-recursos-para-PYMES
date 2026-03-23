@@ -1,0 +1,37 @@
+﻿@model Gestion_de_recursos_para_PYMES.Models.Categoria
+@{
+    ViewData["Title"] = "Detalle de Categoría";
+}
+
+<h2 class="mb-3">Detalle de la Categoría</h2>
+
+@using (Html.BeginForm("Editar", "Categoria", FormMethod.Post, new { @class = "row g-3" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(m => m.CategoriaId)
+
+    <div class="col-md-6">
+        @Html.LabelFor(m => m.Nombre, new { @class = "form-label" })
+        @Html.TextBoxFor(m => m.Nombre, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Nombre, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="col-md-12">
+        @Html.LabelFor(m => m.Descripcion, new { @class = "form-label" })
+        @Html.TextAreaFor(m => m.Descripcion, new { @class = "form-control", rows = "4" })
+        @Html.ValidationMessageFor(m => m.Descripcion, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="col-12">
+        <button type="submit" class="btn btn-success">Guardar Cambios</button>
+        @Html.ActionLink("Cancelar", "Index", "Categoria", null, new { @class = "btn btn-secondary" })
+
+        @if (User.IsInRole("Administrador"))
+        {
+            <form action="/categorias/eliminar/@Model.CategoriaId" method="post" class="d-inline">
+                @Html.AntiForgeryToken()
+                <button type="submit" class="btn btn-danger">Eliminar</button>
+            </form>
+        }
+    </div>
+}
