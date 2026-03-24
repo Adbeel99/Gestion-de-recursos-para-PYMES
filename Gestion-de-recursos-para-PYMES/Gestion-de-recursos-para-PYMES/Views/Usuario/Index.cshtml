@@ -1,0 +1,36 @@
+﻿@model List<Gestion_de_recursos_para_PYMES.Models.UsuarioViewModel>
+@{
+    ViewData["Title"] = "Usuarios";
+}
+
+<h2 class="mb-3">Gestión de Usuarios</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Correo</th>
+            <th>Rol</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var usuario in Model)
+        {
+            <tr>
+                <td>@usuario.Nombre</td>
+                <td>@usuario.Apellidos</td>
+                <td>@usuario.Email</td>
+                <td>@usuario.RolActual</td>
+                <td>
+                    <a asp-action="CambiarRol"
+                       asp-route-id="@usuario.Id"
+                       class="btn btn-primary btn-sm">
+                        Cambiar Rol
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

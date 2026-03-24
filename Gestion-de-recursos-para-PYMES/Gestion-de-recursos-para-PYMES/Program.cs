@@ -1,42 +1,125 @@
+using Gestion_de_recursos_para_PYMES.Constants;
 using Gestion_de_recursos_para_PYMES.Data;
+using Gestion_de_recursos_para_PYMES.Models;
+using Gestion_de_recursos_para_PYMES.Repositories;
+using Gestion_de_recursos_para_PYMES.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
-    ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
-
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(connectionString));
+    options.UseMySql(
+        builder.Configuration.GetConnectionString("DefaultConnection"),
+        ServerVersion.AutoDetect(
+            builder.Configuration.GetConnectionString("DefaultConnection"))
+    )
+);
 
-builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options =>
+builder.Services.AddIdentity<Usuario, IdentityRole<int>>(options =>
 {
-    options.SignIn.RequireConfirmedAccount = false;
+    options.Password.RequireDigit = true;
+    options.Password.RequiredLength = 6;
+    options.Password.RequireNonAlphanumeric = false;
+    options.Password.RequireUppercase = true;
+    options.Password.RequireLowercase = true;
 })
-.AddRoles<IdentityRole>()
-.AddEntityFrameworkStores<ApplicationDbContext>();
+.AddEntityFrameworkStores<ApplicationDbContext>()
+.AddDefaultTokenProviders();
+
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.LoginPath = "/Account/Login";
+    options.AccessDeniedPath = "/Account/AccesoDenegado";
+});
+
+// Repositorios
+builder.Services.AddScoped<ICategoriaRepository, CategoriaRepository>();
+builder.Services.AddScoped<IProductoRepository, ProductoRepository>();
+
+// Servicios
+builder.Services.AddScoped<ICategoriaService, CategoriaService>();
+builder.Services.AddScoped<IProductoService, ProductoService>();
+builder.Services.AddScoped<IAccountService, AccountService>();
 
 builder.Services.AddControllersWithViews();
 
-
 var app = builder.Build();
 
+// Seed roles y admin
+using (var scope = app.Services.CreateScope())
+{
+    var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole<int>>>();
+    var userManager = scope.ServiceProvider
+.GetRequiredService<UserManager<Usuario>>();
 
-if (app.Environment.IsDevelopment())
-{
-    app.UseMigrationsEndPoint();
+    string[] roles = {
+        Roles.Administrador,
+        Roles.Vendedor,
+        Roles.Almacenista
+    };
+
+    foreach (var role in roles)
+        if (!await roleManager.RoleExistsAsync(role))
+            await roleManager.CreateAsync(new IdentityRole<int> { Name = role });
+
+    // Administrador
+    var adminEmail = "admin@sigrepyme.com";
+    if (await userManager.FindByEmailAsync(adminEmail) == null)
+    {
+        var admin = new Usuario
+        {
+            UserName = adminEmail,
+            Email = adminEmail,
+            Nombre = "Administrador",
+            Apellidos = "Sistema",
+            EmailConfirmed = true
+        };
+        await userManager.CreateAsync(admin, "Admin123!");
+        await userManager.AddToRoleAsync(admin, Roles.Administrador);
+    }
+
+    // Vendedor
+    var vendedorEmail = "vendedor@sigrepyme.com";
+    if (await userManager.FindByEmailAsync(vendedorEmail) == null)
+    {
+        var vendedor = new Usuario
+        {
+            UserName = vendedorEmail,
+            Email = vendedorEmail,
+            Nombre = "Juan",
+            Apellidos = "Vendedor",
+            EmailConfirmed = true
+        };
+        await userManager.CreateAsync(vendedor, "Vendedor123!");
+        await userManager.AddToRoleAsync(vendedor, Roles.Vendedor);
+    }
+
+    // Almacenista
+    var almacenistaEmail = "almacenista@sigrepyme.com";
+    if (await userManager.FindByEmailAsync(almacenistaEmail) == null)
+    {
+        var almacenista = new Usuario
+        {
+            UserName = almacenistaEmail,
+            Email = almacenistaEmail,
+            Nombre = "Pedro",
+            Apellidos = "Almacenista",
+            EmailConfirmed = true
+        };
+        await userManager.CreateAsync(almacenista, "Almacenista123!");
+        await userManager.AddToRoleAsync(almacenista, Roles.Almacenista);
+    }
 }
-else
-{
+
+if (!app.Environment.IsDevelopment())
     app.UseExceptionHandler("/Home/Error");
-    app.UseHsts();
-}
 
-app.UseHttpsRedirection();
+
+
+
 app.UseRouting();
 
 app.UseAuthentication();
@@ -46,50 +129,7 @@ app.MapStaticAssets();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}")
+    pattern: "{controller=Account}/{action=Login}/{id?}")
     .WithStaticAssets();
-
-app.MapRazorPages()
-   .WithStaticAssets();
-
-
-using (var scope = app.Services.CreateScope())
-{
-    var services = scope.ServiceProvider;
-
-    var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
-    var userManager = services.GetRequiredService<UserManager<IdentityUser>>();
-
-    string[] roles = { "Administrador", "Vendedor" };
-
-    foreach (var role in roles)
-    {
-        if (!await roleManager.RoleExistsAsync(role))
-        {
-            await roleManager.CreateAsync(new IdentityRole(role));
-        }
-    }
-
-    var adminEmail = "admin@pyme.com";
-    var adminUser = await userManager.FindByEmailAsync(adminEmail);
-
-    if (adminUser == null)
-    {
-        var newAdmin = new IdentityUser
-        {
-            UserName = adminEmail,
-            Email = adminEmail,
-            EmailConfirmed = true
-        };
-
-        var result = await userManager.CreateAsync(newAdmin, "Admin123!");
-
-        if (result.Succeeded)
-        {
-            await userManager.AddToRoleAsync(newAdmin, "Administrador");
-        }
-    }
-}
-
 
 app.Run();
