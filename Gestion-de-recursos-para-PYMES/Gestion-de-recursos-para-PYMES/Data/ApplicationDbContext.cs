@@ -16,6 +16,8 @@ namespace Gestion_de_recursos_para_PYMES.Data
         public DbSet<MovimientoInventario> MovimientosInventario { get; set; }
         public DbSet<DetalleMovimiento> DetallesMovimiento { get; set; }
         public DbSet<Proveedor> Proveedores { get; set; }
+        public DbSet<Cliente> Clientes { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
