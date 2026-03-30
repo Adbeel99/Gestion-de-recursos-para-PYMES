@@ -1,0 +1,59 @@
+﻿@model Gestion_de_recursos_para_PYMES.Models.MovimientoViewModel
+@{
+    ViewData["Title"] = "Registrar Movimiento";
+}
+
+<h2 class="mb-3">Registrar Movimiento de Inventario</h2>
+
+@using (Html.BeginForm("Crear", "Movimiento", FormMethod.Post, new { @class = "row g-3" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="col-md-6">
+        <label class="form-label">Tipo</label>
+        @Html.DropDownListFor(m => m.Tipo,
+            new List<SelectListItem>
+            {
+                new SelectListItem { Text = "Entrada", Value = "Entrada" },
+                new SelectListItem { Text = "Salida", Value = "Salida" }
+            },
+            "Seleccione tipo",
+            new { @class = "form-select" })
+        @Html.ValidationMessageFor(m => m.Tipo, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="col-md-6">
+        @Html.LabelFor(m => m.ProductoId, "Producto", new { @class = "form-label" })
+        @Html.DropDownListFor(m => m.ProductoId,
+            Model.Productos,
+            "Seleccione producto",
+            new { @class = "form-select" })
+        @Html.ValidationMessageFor(m => m.ProductoId, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="col-md-6">
+        @Html.LabelFor(m => m.Cantidad, new { @class = "form-label" })
+        @Html.TextBoxFor(m => m.Cantidad, new { @class = "form-control", type = "number" })
+        @Html.ValidationMessageFor(m => m.Cantidad, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="col-md-6">
+        @Html.LabelFor(m => m.ProveedorId, "Proveedor (opcional)", new { @class = "form-label" })
+        @Html.DropDownListFor(m => m.ProveedorId,
+            Model.Proveedores,
+            "Sin proveedor",
+            new { @class = "form-select" })
+        @Html.ValidationMessageFor(m => m.ProveedorId, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="col-md-12">
+        @Html.LabelFor(m => m.Observaciones, new { @class = "form-label" })
+        @Html.TextAreaFor(m => m.Observaciones, new { @class = "form-control", rows = "3" })
+        @Html.ValidationMessageFor(m => m.Observaciones, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Guardar</button>
+        @Html.ActionLink("Cancelar", "Index", "Movimiento", null, new { @class = "btn btn-secondary" })
+    </div>
+}
