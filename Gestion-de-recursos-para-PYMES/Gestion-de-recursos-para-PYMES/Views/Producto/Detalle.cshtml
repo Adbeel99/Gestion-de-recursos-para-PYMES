@@ -1,0 +1,76 @@
+﻿@model Gestion_de_recursos_para_PYMES.Models.ProductoViewModel
+@{
+    ViewData["Title"] = "Detalle de Producto";
+}
+
+<h2 class="mb-3">Detalle del Producto</h2>
+
+@using (Html.BeginForm("Editar", "Producto", new { id = Model.Producto.ProductoId }, FormMethod.Post, null, new { @class = "row g-3" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(m => m.Producto.ProductoId)
+
+    <div class="col-md-6">
+        @Html.LabelFor(m => m.Producto.Nombre, new { @class = "form-label" })
+        @Html.TextBoxFor(m => m.Producto.Nombre, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Producto.Nombre, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="col-md-6">
+        @Html.LabelFor(m => m.Producto.CodigoSKU, new { @class = "form-label" })
+        @Html.TextBoxFor(m => m.Producto.CodigoSKU, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Producto.CodigoSKU, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="col-md-12">
+        @Html.LabelFor(m => m.Producto.Descripcion, new { @class = "form-label" })
+        @Html.TextAreaFor(m => m.Producto.Descripcion, new { @class = "form-control", rows = "3" })
+        @Html.ValidationMessageFor(m => m.Producto.Descripcion, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="col-md-6">
+        @Html.LabelFor(m => m.Producto.PrecioCosto, new { @class = "form-label" })
+        @Html.TextBoxFor(m => m.Producto.PrecioCosto, new { @class = "form-control", type = "number", step = "0.01" })
+        @Html.ValidationMessageFor(m => m.Producto.PrecioCosto, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="col-md-6">
+        @Html.LabelFor(m => m.Producto.PrecioVenta, new { @class = "form-label" })
+        @Html.TextBoxFor(m => m.Producto.PrecioVenta, new { @class = "form-control", type = "number", step = "0.01" })
+        @Html.ValidationMessageFor(m => m.Producto.PrecioVenta, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="col-md-6">
+        @Html.LabelFor(m => m.Producto.Existencias, new { @class = "form-label" })
+        @Html.TextBoxFor(m => m.Producto.Existencias, new { @class = "form-control", type = "number" })
+        @Html.ValidationMessageFor(m => m.Producto.Existencias, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="col-md-6">
+        @Html.LabelFor(m => m.Producto.ExistenciasMinimas, new { @class = "form-label" })
+        @Html.TextBoxFor(m => m.Producto.ExistenciasMinimas, new { @class = "form-control", type = "number" })
+        @Html.ValidationMessageFor(m => m.Producto.ExistenciasMinimas, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="col-md-6">
+        @Html.LabelFor(m => m.Producto.CategoriaId, "Categoría", new { @class = "form-label" })
+        @Html.DropDownListFor(m => m.Producto.CategoriaId,
+        Model.Categorias,
+        "Seleccione una categoría",
+        new { @class = "form-select" })
+    @Html.ValidationMessageFor(m => m.Producto.CategoriaId, "", new { @class = "text-danger" })
+</div>
+
+<div class="col-12">
+    <button type="submit" class="btn btn-success">Guardar Cambios</button>
+    @Html.ActionLink("Volver", "Index", "Producto", null, new { @class = "btn btn-secondary" })
+
+    @if (User.IsInRole("Administrador"))
+        {
+            <form action="/producto/eliminar/@Model.Producto.ProductoId" method="post" class="d-inline">
+                @Html.AntiForgeryToken()
+                <button type="submit" class="btn btn-danger">Eliminar</button>
+            </form>
+        }
+    </div>
+}

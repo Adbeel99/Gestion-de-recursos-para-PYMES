@@ -1,0 +1,41 @@
+﻿@model List<Gestion_de_recursos_para_PYMES.Models.Producto>
+@{
+    ViewData["Title"] = "Productos";
+}
+
+<h2 class="mb-3">Productos</h2>
+<a asp-action="Crear" class="btn btn-success mb-3">
+    + Registrar nuevo producto
+</a>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>SKU</th>
+            <th>Nombre</th>
+            <th>Categoría</th>
+            <th>Precio Venta</th>
+            <th>Existencias</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var producto in Model)
+        {
+            <tr>
+                <td>@producto.CodigoSKU</td>
+                <td>@producto.Nombre</td>
+                <td>@producto.Categoria?.Nombre</td>
+                <td>@producto.PrecioVenta</td>
+                <td>@producto.Existencias</td>
+                <td>
+                    <a asp-action="Detalle"
+                       asp-route-id="@producto.ProductoId"
+                       class="btn btn-primary btn-sm">
+                        Ver detalle
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
