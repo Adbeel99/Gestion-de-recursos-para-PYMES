@@ -15,11 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Gestion-de-recursos-para-PYMES")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< Updated upstream
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f6d7142974531d8e6f04454467fbbf88a7246ed")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ae79d420e25f2183a487e53335efbec69e8fe6f5")]
->>>>>>> Stashed changes
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b0131bcf14c466bf9c92087059b5a5e206f7bb6a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Gestion-de-recursos-para-PYMES")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Gestion-de-recursos-para-PYMES")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

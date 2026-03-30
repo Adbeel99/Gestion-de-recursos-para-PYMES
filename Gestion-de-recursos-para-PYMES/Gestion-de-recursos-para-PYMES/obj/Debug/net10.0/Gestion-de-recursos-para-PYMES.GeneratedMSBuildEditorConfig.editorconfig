@@ -54,23 +54,19 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-<<<<<<< Updated upstream
-[C:/Projects/Gestion-de-recursos-para-PYMES/Gestion-de-recursos-para-PYMES/Gestion-de-recursos-para-PYMES/Views/Cliente/Create.cshtml]
+[C:/projects/Gestion-de-recursos-para-PYMES/Gestion-de-recursos-para-PYMES/Gestion-de-recursos-para-PYMES/Views/Cliente/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/Gestion-de-recursos-para-PYMES/Gestion-de-recursos-para-PYMES/Gestion-de-recursos-para-PYMES/Views/Cliente/Details.cshtml]
+[C:/projects/Gestion-de-recursos-para-PYMES/Gestion-de-recursos-para-PYMES/Gestion-de-recursos-para-PYMES/Views/Cliente/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/Gestion-de-recursos-para-PYMES/Gestion-de-recursos-para-PYMES/Gestion-de-recursos-para-PYMES/Views/Cliente/Index.cshtml]
+[C:/projects/Gestion-de-recursos-para-PYMES/Gestion-de-recursos-para-PYMES/Gestion-de-recursos-para-PYMES/Views/Cliente/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/Gestion-de-recursos-para-PYMES/Gestion-de-recursos-para-PYMES/Gestion-de-recursos-para-PYMES/Views/Home/Index.cshtml]
-=======
 [C:/projects/Gestion-de-recursos-para-PYMES/Gestion-de-recursos-para-PYMES/Gestion-de-recursos-para-PYMES/Views/Home/Index.cshtml]
->>>>>>> Stashed changes
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
@@ -78,19 +74,15 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-<<<<<<< Updated upstream
-[C:/Projects/Gestion-de-recursos-para-PYMES/Gestion-de-recursos-para-PYMES/Gestion-de-recursos-para-PYMES/Views/Movimiento/Crear.cshtml]
+[C:/projects/Gestion-de-recursos-para-PYMES/Gestion-de-recursos-para-PYMES/Gestion-de-recursos-para-PYMES/Views/Movimiento/Crear.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1pZW50b1xDcmVhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/Gestion-de-recursos-para-PYMES/Gestion-de-recursos-para-PYMES/Gestion-de-recursos-para-PYMES/Views/Movimiento/Index.cshtml]
+[C:/projects/Gestion-de-recursos-para-PYMES/Gestion-de-recursos-para-PYMES/Gestion-de-recursos-para-PYMES/Views/Movimiento/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1pZW50b1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/Gestion-de-recursos-para-PYMES/Gestion-de-recursos-para-PYMES/Gestion-de-recursos-para-PYMES/Views/Producto/Crear.cshtml]
-=======
 [C:/projects/Gestion-de-recursos-para-PYMES/Gestion-de-recursos-para-PYMES/Gestion-de-recursos-para-PYMES/Views/Producto/Crear.cshtml]
->>>>>>> Stashed changes
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cQ3JlYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
