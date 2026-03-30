@@ -72,5 +72,19 @@ namespace Gestion_de_recursos_para_PYMES.Controllers
             _productoService.Eliminar(id);
             return RedirectToAction("Index");
         }
+        [HttpGet("buscar")]
+        public IActionResult Buscar(string termino)
+        {
+            var productos = _productoService.ObtenerTodos();
+
+            if (!string.IsNullOrEmpty(termino))
+            {
+                productos = productos
+                    .Where(p => p.Nombre.Contains(termino, StringComparison.OrdinalIgnoreCase))
+                    .ToList();
+            }
+
+            return Json(productos);
+        }
     }
 }

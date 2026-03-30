@@ -4,9 +4,15 @@
 }
 
 <h2 class="mb-3">Productos</h2>
+
 <a asp-action="Crear" class="btn btn-success mb-3">
     + Registrar nuevo producto
 </a>
+
+<!-- 🔍 BUSCADOR -->
+<div class="mb-3">
+    <input type="text" id="busqueda" class="form-control" placeholder="Buscar producto..." />
+</div>
 
 <table class="table table-striped">
     <thead>
@@ -19,7 +25,7 @@
             <th></th>
         </tr>
     </thead>
-    <tbody>
+    <tbody id="tablaProductos">
         @foreach (var producto in Model)
         {
             <tr>
@@ -30,8 +36,8 @@
                 <td>@producto.Existencias</td>
                 <td>
                     <a asp-action="Detalle"
-                       asp-route-id="@producto.ProductoId"
-                       class="btn btn-primary btn-sm">
+                           asp-route-id="@producto.ProductoId"
+                           class="btn btn-primary btn-sm">
                         Ver detalle
                     </a>
                 </td>
@@ -39,3 +45,48 @@
         }
     </tbody>
 </table>
+
+@section Scripts {
+    <script>
+        const input = document.getElementById("busqueda");
+        const tabla = document.getElementById("tablaProductos");
+
+        input.addEventListener("keyup", async () => {
+            const termino = input.value;
+
+            const response = await fetch(`/producto/buscar?termino=${termino}`);
+            const data = await response.json();
+
+            tabla.innerHTML = "";
+
+            if (data.length === 0) {
+                tabla.innerHTML = `
+                    <tr>
+                        <td colspan="6" class="text-center text-muted">
+                            No se encontraron productos
+                        </td>
+                    </tr>
+                `;
+                return;
+            }
+
+            data.forEach(p => {
+                tabla.innerHTML += `
+                    <tr>
+                        <td>${p.codigoSKU ?? ""}</td>
+                        <td>${p.nombre ?? ""}</td>
+                        <td>${p.categoria?.nombre ?? ""}</td>
+                        <td>${p.precioVenta ?? ""}</td>
+                        <td>${p.existencias ?? ""}</td>
+                        <td>
+                            <a href="/producto/detalle/${p.productoId}"
+                               class="btn btn-primary btn-sm">
+                               Ver detalle
+                            </a>
+                        </td>
+                    </tr>
+                `;
+            });
+        });
+    </script>
+}
