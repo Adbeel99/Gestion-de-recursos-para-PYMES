@@ -33,6 +33,9 @@
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-controller="Usuario" asp-action="Index">Usuarios</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="Cliente" asp-action="Index">Clientes</a>
+                            </li>
                         }
 
                         @if (User.IsInRole("Almacenista"))
@@ -44,6 +47,9 @@
 
                         @if (User.IsInRole("Vendedor"))
                         {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="Cliente" asp-action="Index">Clientes</a>
+                            </li>
                             
                         }
                         @if (User.IsInRole("Administrador") || User.IsInRole("Almacenista"))

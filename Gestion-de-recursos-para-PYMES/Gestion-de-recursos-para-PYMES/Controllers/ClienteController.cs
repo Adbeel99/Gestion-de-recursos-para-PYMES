@@ -5,11 +5,11 @@ using Gestion_de_recursos_para_PYMES.Services;
 
 namespace Gestion_de_recursos_para_PYMES.Controllers
 {
-    public class ClientesController : Controller
+    public class ClienteController : Controller
     {
         private readonly IClienteService _clienteService;
 
-        public ClientesController(IClienteService clienteService)
+        public ClienteController(IClienteService clienteService)
         {
             _clienteService = clienteService;
         }

@@ -1,0 +1,41 @@
+@model List<Gestion_de_recursos_para_PYMES.Models.Cliente>
+@{
+    ViewData["Title"] = "Clientes";
+}
+
+<h2 class="mb-3">Clientes</h2>
+<a asp-action="Create" class="btn btn-success mb-3">+ Registrar nuevo cliente</a>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Empresa</th>
+            <th>Email</th>
+            <th>Teléfono</th>
+            <th>Dirección</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var cliente in Model)
+        {
+            <tr>
+                <td>@cliente.Nombre</td>
+                <td>@cliente.Apellido</td>
+                <td>@cliente.Empresa</td>
+                <td>@cliente.Email</td>
+                <td>@cliente.Telefono</td>
+                <td>@cliente.Direccion</td>
+                <td>
+                    <a asp-action="Details"
+                           asp-route-id="@cliente.Id"
+                           class="btn btn-primary btn-sm">
+                        Ver detalle
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
