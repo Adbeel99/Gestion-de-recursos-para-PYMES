@@ -79,12 +79,24 @@ namespace Gestion_de_recursos_para_PYMES.Controllers
 
             if (!string.IsNullOrEmpty(termino))
             {
+                termino = termino.ToLower();
+
                 productos = productos
-                    .Where(p => p.Nombre.Contains(termino, StringComparison.OrdinalIgnoreCase))
+                    .Where(p => p.Nombre.ToLower().Contains(termino))
                     .ToList();
             }
 
-            return Json(productos);
+            var resultado = productos.Select(p => new
+            {
+                p.ProductoId,
+                p.CodigoSKU,
+                p.Nombre,
+                p.PrecioVenta,
+                p.Existencias,
+                Categoria = p.Categoria != null ? p.Categoria.Nombre : ""
+            });
+
+            return Json(resultado);
         }
     }
 }
