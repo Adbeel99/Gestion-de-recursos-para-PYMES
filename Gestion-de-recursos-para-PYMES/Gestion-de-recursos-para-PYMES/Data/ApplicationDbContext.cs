@@ -17,6 +17,8 @@ namespace Gestion_de_recursos_para_PYMES.Data
         public DbSet<DetalleMovimiento> DetallesMovimiento { get; set; }
         public DbSet<Proveedor> Proveedores { get; set; }
         public DbSet<Cliente> Clientes { get; set; }
+        public DbSet<OrdenVenta> OrdenesVenta { get; set; }
+        public DbSet<DetalleVenta> DetallesVenta { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -59,6 +61,34 @@ namespace Gestion_de_recursos_para_PYMES.Data
             modelBuilder.Entity<Producto>()
                 .HasIndex(p => p.CodigoSKU)
                 .IsUnique();
+
+            // OrdenVenta -> Cliente
+            modelBuilder.Entity<OrdenVenta>()
+                .HasOne(o => o.Cliente)
+                .WithMany()
+                .HasForeignKey(o => o.ClienteId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            // OrdenVenta -> Usuario
+            modelBuilder.Entity<OrdenVenta>()
+                .HasOne(o => o.Usuario)
+                .WithMany(u => u.OrdenesVenta)
+                .HasForeignKey(o => o.UsuarioId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            // DetalleVenta -> OrdenVenta
+            modelBuilder.Entity<DetalleVenta>()
+                .HasOne(d => d.OrdenVenta)
+                .WithMany(o => o.Detalles)
+                .HasForeignKey(d => d.OrdenId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            // DetalleVenta -> Producto
+            modelBuilder.Entity<DetalleVenta>()
+                .HasOne(d => d.Producto)
+                .WithMany()
+                .HasForeignKey(d => d.ProductoId)
+                .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }

@@ -115,6 +115,32 @@ namespace Gestion_de_recursos_para_PYMES.Migrations
                     b.ToTable("DetallesMovimiento");
                 });
 
+            modelBuilder.Entity("Gestion_de_recursos_para_PYMES.Models.DetalleVenta", b =>
+                {
+                    b.Property<int>("DetalleId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("DetalleId"));
+
+                    b.Property<int>("Cantidad")
+                        .HasColumnType("int");
+
+                    b.Property<int>("OrdenId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProductoId")
+                        .HasColumnType("int");
+
+                    b.HasKey("DetalleId");
+
+                    b.HasIndex("OrdenId");
+
+                    b.HasIndex("ProductoId");
+
+                    b.ToTable("DetallesVenta");
+                });
+
             modelBuilder.Entity("Gestion_de_recursos_para_PYMES.Models.MovimientoInventario", b =>
                 {
                     b.Property<int>("MovimientoId")
@@ -147,6 +173,39 @@ namespace Gestion_de_recursos_para_PYMES.Migrations
                     b.HasIndex("UsuarioId");
 
                     b.ToTable("MovimientosInventario");
+                });
+
+            modelBuilder.Entity("Gestion_de_recursos_para_PYMES.Models.OrdenVenta", b =>
+                {
+                    b.Property<int>("OrdenId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("OrdenId"));
+
+                    b.Property<int>("ClienteId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Estado")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<DateTime>("Fecha")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<decimal>("Total")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("UsuarioId")
+                        .HasColumnType("int");
+
+                    b.HasKey("OrdenId");
+
+                    b.HasIndex("ClienteId");
+
+                    b.HasIndex("UsuarioId");
+
+                    b.ToTable("OrdenesVenta");
                 });
 
             modelBuilder.Entity("Gestion_de_recursos_para_PYMES.Models.Producto", b =>
@@ -451,6 +510,25 @@ namespace Gestion_de_recursos_para_PYMES.Migrations
                     b.Navigation("Producto");
                 });
 
+            modelBuilder.Entity("Gestion_de_recursos_para_PYMES.Models.DetalleVenta", b =>
+                {
+                    b.HasOne("Gestion_de_recursos_para_PYMES.Models.OrdenVenta", "OrdenVenta")
+                        .WithMany("Detalles")
+                        .HasForeignKey("OrdenId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("Gestion_de_recursos_para_PYMES.Models.Producto", "Producto")
+                        .WithMany()
+                        .HasForeignKey("ProductoId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("OrdenVenta");
+
+                    b.Navigation("Producto");
+                });
+
             modelBuilder.Entity("Gestion_de_recursos_para_PYMES.Models.MovimientoInventario", b =>
                 {
                     b.HasOne("Gestion_de_recursos_para_PYMES.Models.Proveedor", "Proveedor")
@@ -465,6 +543,25 @@ namespace Gestion_de_recursos_para_PYMES.Migrations
                         .IsRequired();
 
                     b.Navigation("Proveedor");
+
+                    b.Navigation("Usuario");
+                });
+
+            modelBuilder.Entity("Gestion_de_recursos_para_PYMES.Models.OrdenVenta", b =>
+                {
+                    b.HasOne("Gestion_de_recursos_para_PYMES.Models.Cliente", "Cliente")
+                        .WithMany()
+                        .HasForeignKey("ClienteId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("Gestion_de_recursos_para_PYMES.Models.Usuario", "Usuario")
+                        .WithMany("OrdenesVenta")
+                        .HasForeignKey("UsuarioId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Cliente");
 
                     b.Navigation("Usuario");
                 });
@@ -541,6 +638,11 @@ namespace Gestion_de_recursos_para_PYMES.Migrations
                     b.Navigation("Detalles");
                 });
 
+            modelBuilder.Entity("Gestion_de_recursos_para_PYMES.Models.OrdenVenta", b =>
+                {
+                    b.Navigation("Detalles");
+                });
+
             modelBuilder.Entity("Gestion_de_recursos_para_PYMES.Models.Proveedor", b =>
                 {
                     b.Navigation("MovimientosInventario");
@@ -549,6 +651,8 @@ namespace Gestion_de_recursos_para_PYMES.Migrations
             modelBuilder.Entity("Gestion_de_recursos_para_PYMES.Models.Usuario", b =>
                 {
                     b.Navigation("MovimientosInventario");
+
+                    b.Navigation("OrdenesVenta");
                 });
 #pragma warning restore 612, 618
         }

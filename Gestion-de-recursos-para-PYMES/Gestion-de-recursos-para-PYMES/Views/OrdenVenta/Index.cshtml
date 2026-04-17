@@ -1,0 +1,41 @@
+﻿@model List<Gestion_de_recursos_para_PYMES.Models.OrdenVenta>
+@{
+    ViewData["Title"] = "Órdenes de Venta";
+}
+
+<h2 class="mb-3">Órdenes de Venta</h2>
+<a asp-action="Crear" class="btn btn-success mb-3">+ Nueva Orden</a>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Fecha</th>
+            <th>Cliente</th>
+            <th>Estado</th>
+            <th>Total</th>
+            <th>Vendedor</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var orden in Model)
+        {
+            <tr>
+                <td>@orden.Fecha.ToShortDateString()</td>
+                <td>@orden.Cliente?.Nombre</td>
+                <td>
+                    <span class="badge bg-warning">@orden.Estado</span>
+                </td>
+                <td>@orden.Total.ToString("C")</td>
+                <td>@orden.Usuario?.Nombre</td>
+                <td>
+                    <a asp-action="Detalle"
+                           asp-route-id="@orden.OrdenId"
+                           class="btn btn-primary btn-sm">
+                        Ver detalle
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
