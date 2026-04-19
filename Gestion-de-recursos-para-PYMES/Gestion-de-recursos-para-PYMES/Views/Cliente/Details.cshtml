@@ -1,0 +1,61 @@
+﻿@model Gestion_de_recursos_para_PYMES.Models.Cliente
+@{
+    ViewData["Title"] = "Detalle de Cliente";
+}
+
+<h2 class="mb-3">Detalle del Cliente</h2>
+
+@using (Html.BeginForm("Edit", "Cliente", FormMethod.Post, new { @class = "row g-3" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(m => m.Id)
+
+    <div class="col-md-6">
+        @Html.LabelFor(m => m.Nombre, new { @class = "form-label" })
+        @Html.TextBoxFor(m => m.Nombre, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Nombre, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="col-md-6">
+        @Html.LabelFor(m => m.Apellido, new { @class = "form-label" })
+        @Html.TextBoxFor(m => m.Apellido, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Apellido, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="col-md-6">
+        @Html.LabelFor(m => m.Empresa, new { @class = "form-label" })
+        @Html.TextBoxFor(m => m.Empresa, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Empresa, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="col-md-6">
+        @Html.LabelFor(m => m.Email, new { @class = "form-label" })
+        @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="col-md-6">
+        @Html.LabelFor(m => m.Telefono, new { @class = "form-label" })
+        @Html.TextBoxFor(m => m.Telefono, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Telefono, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="col-md-6">
+        @Html.LabelFor(m => m.Direccion, new { @class = "form-label" })
+        @Html.TextBoxFor(m => m.Direccion, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Direccion, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="col-12">
+        <button type="submit" class="btn btn-success">Guardar Cambios</button>
+        @Html.ActionLink("Cancelar", "Index", "Cliente", null, new { @class = "btn btn-secondary" })
+
+        @if (User.IsInRole("Administrador"))
+        {
+            <form action="/cliente/delete/@Model.Id" method="post" class="d-inline">
+                @Html.AntiForgeryToken()
+                <button type="submit" class="btn btn-danger">Eliminar</button>
+            </form>
+        }
+    </div>
+}

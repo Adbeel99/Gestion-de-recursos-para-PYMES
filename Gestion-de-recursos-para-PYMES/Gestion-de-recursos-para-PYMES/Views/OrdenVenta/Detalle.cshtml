@@ -1,0 +1,48 @@
+﻿@model Gestion_de_recursos_para_PYMES.Models.OrdenVenta
+@{
+    ViewData["Title"] = "Detalle de Orden";
+}
+
+<h2 class="mb-3">Detalle de Orden #@Model.OrdenId</h2>
+
+<dl class="row">
+    <dt class="col-sm-3">Fecha</dt>
+    <dd class="col-sm-9">@Model.Fecha.ToShortDateString()</dd>
+
+    <dt class="col-sm-3">Cliente</dt>
+    <dd class="col-sm-9">@Model.Cliente?.Nombre</dd>
+
+    <dt class="col-sm-3">Vendedor</dt>
+    <dd class="col-sm-9">@Model.Usuario?.Nombre</dd>
+
+    <dt class="col-sm-3">Estado</dt>
+    <dd class="col-sm-9"><span class="badge bg-warning">@Model.Estado</span></dd>
+
+    <dt class="col-sm-3">Total</dt>
+    <dd class="col-sm-9">@Model.Total.ToString("C")</dd>
+</dl>
+
+<h5>Productos</h5>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Precio Unitario</th>
+            <th>Subtotal</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var detalle in Model.Detalles)
+        {
+            <tr>
+                <td>@detalle.Producto?.Nombre</td>
+                <td>@detalle.Cantidad</td>
+                <td>@detalle.Producto?.PrecioVenta.ToString("C")</td>
+                <td>@((detalle.Producto?.PrecioVenta * detalle.Cantidad)?.ToString("C"))</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Index" class="btn btn-secondary">Volver</a>

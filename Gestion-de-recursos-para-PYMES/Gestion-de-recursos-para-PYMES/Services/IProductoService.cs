@@ -2,14 +2,14 @@
 
 namespace Gestion_de_recursos_para_PYMES.Services
 {
-    public interface IProductoService 
+    public interface IProductoService
     {
-        public void Crear(Producto producto);
-        public void Editar(Producto producto);
-        public void Eliminar(int id);
-        public Producto ObtenerPorId(int id);
-        public List<Producto> ObtenerTodos();
-
-        public ProductoViewModel ObtenerProductoViewModel();
+        void Crear(Producto producto);
+        void Editar(Producto producto);
+        void Eliminar(int id);
+        Producto ObtenerPorId(int id);
+        List<Producto> ObtenerTodos();
+        List<Producto> Buscar(string termino);
+        ProductoViewModel ObtenerProductoViewModel();
     }
 }

@@ -13,7 +13,12 @@ namespace Gestion_de_recursos_para_PYMES.Data
         public DbSet<Producto> Productos { get; set; }
         public DbSet<Categoria> Categorias { get; set; }
         public DbSet<Usuario> Usuarios => Users;
+        public DbSet<MovimientoInventario> MovimientosInventario { get; set; }
+        public DbSet<DetalleMovimiento> DetallesMovimiento { get; set; }
+        public DbSet<Proveedor> Proveedores { get; set; }
         public DbSet<Cliente> Clientes { get; set; }
+        public DbSet<OrdenVenta> OrdenesVenta { get; set; }
+        public DbSet<DetalleVenta> DetallesVenta { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -25,9 +30,65 @@ namespace Gestion_de_recursos_para_PYMES.Data
                 .HasForeignKey(p => p.CategoriaId)
                 .OnDelete(DeleteBehavior.Restrict);
 
+
+            modelBuilder.Entity<MovimientoInventario>()
+                .HasOne(m => m.Usuario)
+                .WithMany(u => u.MovimientosInventario)
+                .HasForeignKey(m => m.UsuarioId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+
+            modelBuilder.Entity<MovimientoInventario>()
+                .HasOne(m => m.Proveedor)
+                .WithMany(p => p.MovimientosInventario)
+                .HasForeignKey(m => m.ProveedorId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+
+            modelBuilder.Entity<DetalleMovimiento>()
+                .HasOne(d => d.MovimientoInventario)
+                .WithMany(m => m.Detalles)
+                .HasForeignKey(d => d.MovimientoId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+
+            modelBuilder.Entity<DetalleMovimiento>()
+                .HasOne(d => d.Producto)
+                .WithMany()
+                .HasForeignKey(d => d.ProductoId)
+                .OnDelete(DeleteBehavior.Restrict);
+
             modelBuilder.Entity<Producto>()
                 .HasIndex(p => p.CodigoSKU)
                 .IsUnique();
+
+            // OrdenVenta -> Cliente
+            modelBuilder.Entity<OrdenVenta>()
+                .HasOne(o => o.Cliente)
+                .WithMany()
+                .HasForeignKey(o => o.ClienteId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            // OrdenVenta -> Usuario
+            modelBuilder.Entity<OrdenVenta>()
+                .HasOne(o => o.Usuario)
+                .WithMany(u => u.OrdenesVenta)
+                .HasForeignKey(o => o.UsuarioId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            // DetalleVenta -> OrdenVenta
+            modelBuilder.Entity<DetalleVenta>()
+                .HasOne(d => d.OrdenVenta)
+                .WithMany(o => o.Detalles)
+                .HasForeignKey(d => d.OrdenId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            // DetalleVenta -> Producto
+            modelBuilder.Entity<DetalleVenta>()
+                .HasOne(d => d.Producto)
+                .WithMany()
+                .HasForeignKey(d => d.ProductoId)
+                .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }
