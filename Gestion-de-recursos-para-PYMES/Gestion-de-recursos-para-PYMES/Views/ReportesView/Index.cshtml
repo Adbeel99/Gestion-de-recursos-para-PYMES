@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<h2>Dashboard de Productos</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Producto</th>
+            <th>Stock</th>
+        </tr>
+    </thead>
+    <tbody id="tablaReportes">
+    </tbody>
+</table>
+
+@section Scripts {
+    <script>
+        async function cargarReporte() {
+            const response = await fetch('/api/reportes/productos-stock');
+            const data = await response.json();
+
+            const tabla = document.getElementById("tablaReportes");
+            tabla.innerHTML = "";
+
+            data.forEach(p => {
+                tabla.innerHTML += `
+                    <tr>
+                        <td>${p.nombre}</td>
+                        <td>${p.existencias}</td>
+                    </tr>
+                `;
+            });
+        }
+
+        cargarReporte();
+    </script>
+}

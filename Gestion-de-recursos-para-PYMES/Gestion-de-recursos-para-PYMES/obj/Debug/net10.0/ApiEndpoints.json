@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "ContainingType": "Gestion_de_recursos_para_PYMES.Controllers.ReportesController",
+    "Method": "ProductosConStock",
+    "RelativePath": "api/reportes/productos-stock",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
