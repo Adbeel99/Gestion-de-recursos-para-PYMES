@@ -67,5 +67,12 @@ namespace Gestion_de_recursos_para_PYMES.Services
 
             return productos;
         }
+
+        public List<Producto> ObtenerEnStockMinimo()
+        {
+            return _productoRepository.ObtenerTodos()
+                .Where(p => p.Existencias <= p.ExistenciasMinimas)
+                .ToList();
+        }
     }
 }

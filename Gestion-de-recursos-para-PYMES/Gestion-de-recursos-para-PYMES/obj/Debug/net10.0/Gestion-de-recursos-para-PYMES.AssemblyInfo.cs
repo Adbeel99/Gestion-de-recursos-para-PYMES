@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Gestion-de-recursos-para-PYMES")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b1467d656eacd68dfa7c07aa8bbdf0ba2b938769")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4740191ee45895ca6c472767ff1bf7a3bc8f0234")]
 [assembly: System.Reflection.AssemblyProductAttribute("Gestion-de-recursos-para-PYMES")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Gestion-de-recursos-para-PYMES")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

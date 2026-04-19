@@ -21,6 +21,11 @@ namespace Gestion_de_recursos_para_PYMES.Controllers
         public IActionResult Index()
         {
             var productos = _productoService.ObtenerTodos();
+            var alertaStock = _productoService.ObtenerEnStockMinimo()
+                .Select(p => p.Nombre)
+                .ToList();
+
+            ViewBag.AlertaStock = alertaStock;
             return View(productos);
         }
 

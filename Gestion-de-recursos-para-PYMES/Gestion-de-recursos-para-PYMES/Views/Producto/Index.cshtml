@@ -4,15 +4,7 @@
 }
 
 <h2 class="mb-3">Productos</h2>
-
-<a asp-action="Crear" class="btn btn-success mb-3">
-    + Registrar nuevo producto
-</a>
-
-<!-- 🔍 BUSCADOR -->
-<div class="mb-3">
-    <input type="text" id="busqueda" class="form-control" placeholder="Buscar producto..." />
-</div>
+<a asp-action="Crear" class="btn btn-success mb-3">+ Registrar nuevo producto</a>
 
 <table class="table table-striped">
     <thead>
@@ -22,18 +14,29 @@
             <th>Categoría</th>
             <th>Precio Venta</th>
             <th>Existencias</th>
+            <th>Estado</th>
             <th></th>
         </tr>
     </thead>
-    <tbody id="tablaProductos">
+    <tbody>
         @foreach (var producto in Model)
         {
             <tr>
                 <td>@producto.CodigoSKU</td>
                 <td>@producto.Nombre</td>
                 <td>@producto.Categoria?.Nombre</td>
-                <td>@producto.PrecioVenta</td>
+                <td>@producto.PrecioVenta.ToString("C")</td>
                 <td>@producto.Existencias</td>
+                <td>
+                    @if (producto.Existencias <= producto.ExistenciasMinimas)
+                    {
+                        <span class="badge bg-danger">Stock Bajo</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-success">OK</span>
+                    }
+                </td>
                 <td>
                     <a asp-action="Detalle"
                            asp-route-id="@producto.ProductoId"
@@ -47,46 +50,22 @@
 </table>
 
 @section Scripts {
-    <script>
-        const input = document.getElementById("busqueda");
-        const tabla = document.getElementById("tablaProductos");
-
-        input.addEventListener("keyup", async () => {
-            const termino = input.value;
-
-            const response = await fetch(`/producto/buscar?termino=${termino}`);
-            const data = await response.json();
-
-            tabla.innerHTML = "";
-
-            if (data.length === 0) {
-                tabla.innerHTML = `
-                    <tr>
-                        <td colspan="6" class="text-center text-muted">
-                            No se encontraron productos
-                        </td>
-                    </tr>
-                `;
-                return;
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    @if (ViewBag.AlertaStock != null)
+    {
+        <script>
+            Swal.fire({
+            icon: 'warning',
+            title: 'Alerta de Stock Bajo',
+            html: `Los siguientes productos están en stock mínimo o por debajo:<br><br>
+            <ul style="text-align:left">
+            @foreach (var nombre in ViewBag.AlertaStock)
+            {
+                @:<li>@nombre</li>
             }
-
-            data.forEach(p => {
-                tabla.innerHTML += `
-                    <tr>
-                        <td>${p.codigoSKU ?? ""}</td>
-                        <td>${p.nombre ?? ""}</td>
-                        <td>${p.categoria ?? ""}</td>
-                        <td>${p.precioVenta ?? ""}</td>
-                        <td>${p.existencias ?? ""}</td>
-                        <td>
-                            <a href="/producto/detalle/${p.productoId}"
-                               class="btn btn-primary btn-sm">
-                               Ver detalle
-                            </a>
-                        </td>
-                    </tr>
-                `;
+            </ul>`,
+            confirmButtonText: 'Entendido'
             });
-        });
-    </script>
+        </script>
+    }
 }
