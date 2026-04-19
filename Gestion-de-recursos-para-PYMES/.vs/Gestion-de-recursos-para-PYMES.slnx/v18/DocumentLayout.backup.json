@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|c:\\projects\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\repositories\\ordenventarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|solutionrelative:gestion-de-recursos-para-pymes\\repositories\\ordenventarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Migrations\\20260419212153_SyncDB.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Gestion-de-recursos-para-PYMES\\Migrations\\20260419212153_SyncDB.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|c:\\projects\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,6 +13,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|c:\\projects\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|solutionrelative:gestion-de-recursos-para-pymes\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|c:\\projects\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\repositories\\ordenventarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|solutionrelative:gestion-de-recursos-para-pymes\\repositories\\ordenventarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|c:\\projects\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\views\\ordenventa\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -306,7 +310,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -318,7 +322,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "20260419212153_SyncDB.cs",
+              "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Migrations\\20260419212153_SyncDB.cs",
+              "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Migrations\\20260419212153_SyncDB.cs",
+              "ToolTip": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Migrations\\20260419212153_SyncDB.cs",
+              "RelativeToolTip": "Gestion-de-recursos-para-PYMES\\Migrations\\20260419212153_SyncDB.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T21:21:53.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "OrdenVentaController.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Controllers\\OrdenVentaController.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Controllers\\OrdenVentaController.cs",
@@ -330,7 +347,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Views\\OrdenVenta\\Index.cshtml",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Views\\OrdenVenta\\Index.cshtml",
@@ -348,14 +365,14 @@
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Program.cs",
               "ToolTip": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Program.cs",
               "RelativeToolTip": "Gestion-de-recursos-para-PYMES\\Program.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAAAGAAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAAGAAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-30T23:15:58.322Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Crear.cshtml",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Views\\OrdenVenta\\Crear.cshtml",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Views\\OrdenVenta\\Crear.cshtml",
@@ -367,7 +384,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "OrdenVentaViewModel.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Models\\OrdenVentaViewModel.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Models\\OrdenVentaViewModel.cs",
@@ -379,7 +396,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "OrdenVenta.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Models\\OrdenVenta.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Models\\OrdenVenta.cs",
@@ -391,7 +408,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "IOrdenVentaService.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Services\\IOrdenVentaService.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Services\\IOrdenVentaService.cs",
@@ -403,7 +420,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "OrdenVentaService.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Services\\OrdenVentaService.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Services\\OrdenVentaService.cs",
@@ -415,7 +432,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Detalle.cshtml",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Views\\OrdenVenta\\Detalle.cshtml",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Views\\OrdenVenta\\Detalle.cshtml",
@@ -427,7 +444,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Crear.cshtml",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Views\\Proveedor\\Crear.cshtml",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Views\\Proveedor\\Crear.cshtml",
@@ -439,7 +456,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Detalle.cshtml",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Views\\Proveedor\\Detalle.cshtml",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Views\\Proveedor\\Detalle.cshtml",
@@ -451,7 +468,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Views\\Shared\\_Layout.cshtml",
@@ -463,20 +480,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "OrdenVentaRepository.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Repositories\\OrdenVentaRepository.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Repositories\\OrdenVentaRepository.cs",
               "ToolTip": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Repositories\\OrdenVentaRepository.cs",
               "RelativeToolTip": "Gestion-de-recursos-para-PYMES\\Repositories\\OrdenVentaRepository.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAtwCgAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAIwDoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-17T05:23:58.568Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "IOrdenVentaRepository.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Repositories\\IOrdenVentaRepository.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Repositories\\IOrdenVentaRepository.cs",
@@ -488,7 +505,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "20260417052007_OrdenesVenta.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Migrations\\20260417052007_OrdenesVenta.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Migrations\\20260417052007_OrdenesVenta.cs",
@@ -500,7 +517,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "DetalleVenta.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Models\\DetalleVenta.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Models\\DetalleVenta.cs",
@@ -512,7 +529,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Data\\ApplicationDbContext.cs",
@@ -524,7 +541,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Models\\Usuario.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Models\\Usuario.cs",
@@ -536,7 +553,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "MovimientoService.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Services\\MovimientoService.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Services\\MovimientoService.cs",
@@ -548,7 +565,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "IMovimientoService.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Services\\IMovimientoService.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Services\\IMovimientoService.cs",
@@ -560,7 +577,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "MovimientoViewModel.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Models\\MovimientoViewModel.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Models\\MovimientoViewModel.cs",
@@ -572,7 +589,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "Crear.cshtml",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Views\\Movimiento\\Crear.cshtml",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Views\\Movimiento\\Crear.cshtml",
@@ -584,7 +601,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "MovimientoInventario.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Models\\MovimientoInventario.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Models\\MovimientoInventario.cs",
@@ -596,7 +613,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "ProveedorController.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Controllers\\ProveedorController.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Controllers\\ProveedorController.cs",
@@ -608,7 +625,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "ProductoController.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Controllers\\ProductoController.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Controllers\\ProductoController.cs",
@@ -620,7 +637,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Views\\Proveedor\\Index.cshtml",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Views\\Proveedor\\Index.cshtml",
@@ -632,7 +649,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "ProveedorService.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Services\\ProveedorService.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Services\\ProveedorService.cs",
@@ -644,7 +661,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "IProveedorService.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Services\\IProveedorService.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Services\\IProveedorService.cs",
@@ -656,7 +673,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "ProveedorRepository.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Repositories\\ProveedorRepository.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Repositories\\ProveedorRepository.cs",
@@ -668,7 +685,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "IProveedorRepository.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Repositories\\IProveedorRepository.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Repositories\\IProveedorRepository.cs",
@@ -680,7 +697,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "Proveedor.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Models\\Proveedor.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Models\\Proveedor.cs",
@@ -692,7 +709,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "ProductoService.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Services\\ProductoService.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Services\\ProductoService.cs",
@@ -704,7 +721,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "CategoriaController.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Controllers\\CategoriaController.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Controllers\\CategoriaController.cs",
@@ -729,7 +746,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "IProductoService.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Services\\IProductoService.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Services\\IProductoService.cs",
@@ -741,7 +758,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Views\\Producto\\Index.cshtml",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Views\\Producto\\Index.cshtml",
@@ -753,7 +770,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "Crear.cshtml",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Views\\Producto\\Crear.cshtml",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Views\\Producto\\Crear.cshtml",
@@ -765,7 +782,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "Detalle.cshtml",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Views\\Producto\\Detalle.cshtml",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Views\\Producto\\Detalle.cshtml",
@@ -777,7 +794,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "ProductoViweModel.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Models\\ProductoViweModel.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Models\\ProductoViweModel.cs",
@@ -789,7 +806,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Controllers\\AccountController.cs",
@@ -801,7 +818,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "UsuarioController.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Controllers\\UsuarioController.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Controllers\\UsuarioController.cs",
@@ -813,7 +830,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Views\\Usuario\\Index.cshtml",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Views\\Usuario\\Index.cshtml",
@@ -825,7 +842,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "CambiarRol.cshtml",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Views\\Usuario\\CambiarRol.cshtml",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Views\\Usuario\\CambiarRol.cshtml",
@@ -837,7 +854,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 44,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Views\\Account\\Login.cshtml",
@@ -849,7 +866,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 45,
               "Title": "UsuarioViewModel.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Models\\UsuarioViewModel.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Models\\UsuarioViewModel.cs",
@@ -861,7 +878,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 48,
               "Title": "IAccountService.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Services\\IAccountService.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Services\\IAccountService.cs",
@@ -873,7 +890,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 47,
               "Title": "AccountService.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Services\\AccountService.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Services\\AccountService.cs",
@@ -885,7 +902,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 46,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Views\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Views\\Account\\Register.cshtml",
@@ -897,7 +914,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 49,
               "Title": "RegisterViewModel.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Models\\RegisterViewModel.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Models\\RegisterViewModel.cs",
@@ -909,7 +926,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 50,
               "Title": "ProductoRepository.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Repositories\\ProductoRepository.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Repositories\\ProductoRepository.cs",
@@ -921,7 +938,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 51,
               "Title": "IProductoRepository.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Repositories\\IProductoRepository.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Repositories\\IProductoRepository.cs",
@@ -933,7 +950,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 52,
               "Title": "Detalle.cshtml",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Views\\Categoria\\Detalle.cshtml",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Views\\Categoria\\Detalle.cshtml",
@@ -945,7 +962,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 53,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Controllers\\HomeController.cs",
@@ -957,7 +974,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 54,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Properties\\launchSettings.json",
@@ -969,7 +986,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 55,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Views\\Home\\Index.cshtml",
@@ -981,7 +998,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 74,
               "Title": "20260323042439_Actualiazacion.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Migrations\\20260323042439_Actualiazacion.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Migrations\\20260323042439_Actualiazacion.cs",
@@ -993,7 +1010,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 56,
               "Title": "_LoginPartial.cshtml",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Views\\Shared\\_LoginPartial.cshtml",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Views\\Shared\\_LoginPartial.cshtml",
@@ -1005,7 +1022,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 57,
               "Title": "Crear.cshtml",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Views\\Categoria\\Crear.cshtml",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Views\\Categoria\\Crear.cshtml",
@@ -1017,7 +1034,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 58,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Views\\Categoria\\Index.cshtml",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Views\\Categoria\\Index.cshtml",
@@ -1029,7 +1046,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 59,
               "Title": "AccesoDenegado.cshtml",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Views\\Account\\AccesoDenegado.cshtml",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Views\\Account\\AccesoDenegado.cshtml",
@@ -1041,7 +1058,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 60,
               "Title": "LoginViewModel.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Models\\LoginViewModel.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Models\\LoginViewModel.cs",
@@ -1053,7 +1070,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 62,
               "Title": "ICategoriaService.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Services\\ICategoriaService.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Services\\ICategoriaService.cs",
@@ -1065,7 +1082,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 63,
               "Title": "ICategoriaRepository.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Repositories\\ICategoriaRepository.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Repositories\\ICategoriaRepository.cs",
@@ -1077,7 +1094,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 64,
               "Title": "CategoriaRepository.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Repositories\\CategoriaRepository.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Repositories\\CategoriaRepository.cs",
@@ -1089,7 +1106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 65,
               "Title": "Categoria.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Models\\Categoria.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Models\\Categoria.cs",
@@ -1101,7 +1118,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 61,
               "Title": "CategoriaService.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Services\\CategoriaService.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Services\\CategoriaService.cs",
@@ -1113,7 +1130,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 66,
               "Title": "Producto.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Models\\Producto.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Models\\Producto.cs",
@@ -1125,7 +1142,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 67,
               "Title": "Roles.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Constants\\Roles.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Constants\\Roles.cs",
@@ -1137,7 +1154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 68,
               "Title": "Gestion-de-recursos-para-PYMES.csproj",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj",
@@ -1149,7 +1166,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 69,
               "Title": "20260322222901_ActualizacionBaseDatosYProductos.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Data\\Migrations\\20260322222901_ActualizacionBaseDatosYProductos.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Data\\Migrations\\20260322222901_ActualizacionBaseDatosYProductos.cs",
@@ -1161,7 +1178,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 72,
               "Title": "20260315204944_ProductosYCategorias.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Data\\Migrations\\20260315204944_ProductosYCategorias.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Data\\Migrations\\20260315204944_ProductosYCategorias.cs",
@@ -1172,7 +1189,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 71,
               "Title": "_ValidationScriptsPartial.cshtml",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
@@ -1184,7 +1201,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 70,
               "Title": "Error.cshtml",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Views\\Shared\\Error.cshtml",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Views\\Shared\\Error.cshtml",
@@ -1196,7 +1213,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 73,
               "Title": "ScaffoldingReadMe.txt",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\ScaffoldingReadMe.txt",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\ScaffoldingReadMe.txt",
