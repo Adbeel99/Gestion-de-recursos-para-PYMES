@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|c:\\projects\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|solutionrelative:gestion-de-recursos-para-pymes\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|c:\\projects\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|solutionrelative:gestion-de-recursos-para-pymes\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|c:\\projects\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\views\\reportesview\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|solutionrelative:gestion-de-recursos-para-pymes\\views\\reportesview\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|c:\\projects\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|solutionrelative:gestion-de-recursos-para-pymes\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{33645409-7760-37FB-8ED2-269B986BFBBC}|Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES.csproj|c:\\projects\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\gestion-de-recursos-para-pymes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -322,7 +322,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 17,
+          "SelectedChildIndex": 39,
           "Children": [
             {
               "$type": "Bookmark",
@@ -334,7 +334,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ReportesViewController.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Controllers\\ReportesViewController.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Controllers\\ReportesViewController.cs",
@@ -342,12 +342,11 @@
               "RelativeToolTip": "Gestion-de-recursos-para-PYMES\\Controllers\\ReportesViewController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-19T22:24:42.979Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-19T22:24:42.979Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Views\\ReportesView\\Index.cshtml",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Views\\ReportesView\\Index.cshtml",
@@ -355,12 +354,11 @@
               "RelativeToolTip": "Gestion-de-recursos-para-PYMES\\Views\\ReportesView\\Index.cshtml",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAACYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-19T22:21:53.596Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-19T22:21:53.596Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ReportesController.cs",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Controllers\\ReportesController.cs",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Controllers\\ReportesController.cs",
@@ -368,8 +366,7 @@
               "RelativeToolTip": "Gestion-de-recursos-para-PYMES\\Controllers\\ReportesController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-19T22:04:12.687Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-19T22:04:12.687Z"
             },
             {
               "$type": "Document",
@@ -517,7 +514,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\Views\\Shared\\_Layout.cshtml",
@@ -782,13 +779,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\appsettings.json",
               "RelativeDocumentMoniker": "Gestion-de-recursos-para-PYMES\\appsettings.json",
               "ToolTip": "C:\\projects\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\Gestion-de-recursos-para-PYMES\\appsettings.json",
               "RelativeToolTip": "Gestion-de-recursos-para-PYMES\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2026-03-30T23:15:58.367Z",
               "EditorCaption": ""
