@@ -2,9 +2,12 @@ using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 using Gestion_de_recursos_para_PYMES.Models;
 using Gestion_de_recursos_para_PYMES.Services;
+using Gestion_de_recursos_para_PYMES.Constants;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Gestion_de_recursos_para_PYMES.Controllers
 {
+    [Authorize(Roles = $"{Roles.Administrador},{Roles.Almacenista}")]
     public class ClienteController : Controller
     {
         private readonly IClienteService _clienteService;
@@ -65,6 +68,37 @@ namespace Gestion_de_recursos_para_PYMES.Controllers
         {
             _clienteService.Eliminar(id);
             return RedirectToAction(nameof(Index));
+        }
+
+        [HttpGet]
+        public IActionResult Buscar(string termino)
+        {
+            var clientes = _clienteService.ObtenerTodos();
+
+            if (!string.IsNullOrEmpty(termino))
+            {
+                termino = termino.ToLower();
+
+                clientes = clientes.Where(c =>
+                    c.Nombre.ToLower().Contains(termino) ||
+                    c.Apellido.ToLower().Contains(termino) ||
+                    c.Empresa.ToLower().Contains(termino) ||
+                    c.Email.ToLower().Contains(termino)
+                ).ToList();
+            }
+
+            var resultado = clientes.Select(c => new
+            {
+                c.Id,
+                c.Nombre,
+                c.Apellido,
+                c.Empresa,
+                c.Email,
+                c.Telefono,
+                c.Direccion
+            });
+
+            return Json(resultado);
         }
     }
 }
