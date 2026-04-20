@@ -57,6 +57,17 @@ builder.Services.AddScoped<IOrdenVentaService, OrdenVentaService>();
 builder.Services.AddControllersWithViews();
 
 
+builder.Services.AddControllers();
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("Grafana", policy =>
+    {
+        policy.WithOrigins("http://localhost:3000")
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+});
 
 var app = builder.Build();
 
@@ -133,6 +144,8 @@ if (!app.Environment.IsDevelopment())
 
 
 app.UseRouting();
+
+app.UseCors("Grafana");
 
 app.UseAuthentication();
 app.UseAuthorization();

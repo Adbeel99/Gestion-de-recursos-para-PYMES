@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "ContainingType": "Gestion_de_recursos_para_PYMES.Controllers.Api.DashboardApiController",
+    "Method": "Index",
+    "RelativePath": "api/dashboard",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Gestion_de_recursos_para_PYMES.Controllers.Api.DashboardApiController",
+    "Method": "ProductoMasVendido",
+    "RelativePath": "api/dashboard/producto-mas-vendido",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Gestion_de_recursos_para_PYMES.Controllers.Api.DashboardApiController",
+    "Method": "StockBajo",
+    "RelativePath": "api/dashboard/stock-bajo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
