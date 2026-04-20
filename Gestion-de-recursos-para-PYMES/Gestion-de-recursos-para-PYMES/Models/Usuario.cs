@@ -14,5 +14,7 @@ namespace Gestion_de_recursos_para_PYMES.Models
         public string Apellidos { get; set; }
 
         public List<MovimientoInventario> MovimientosInventario { get; set; } = new();
+        
+        public List<OrdenVenta> OrdenesVenta { get; set; } = new();
     }
 }

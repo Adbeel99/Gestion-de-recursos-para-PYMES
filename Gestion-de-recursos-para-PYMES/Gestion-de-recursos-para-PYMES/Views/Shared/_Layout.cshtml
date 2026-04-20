@@ -36,6 +36,12 @@
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-controller="Cliente" asp-action="Index">Clientes</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="Proveedor" asp-action="Index">Proveedores</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="Dashboard" asp-action="Index">Dashboard</a>
+                            </li>
                         }
 
                         @if (User.IsInRole("Almacenista"))
@@ -50,12 +56,18 @@
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-controller="Cliente" asp-action="Index">Clientes</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="OrdenVenta" asp-action="Index">Órdenes de Venta</a>
+                            </li>
                             
                         }
                         @if (User.IsInRole("Administrador") || User.IsInRole("Almacenista"))
                         {
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-controller="Movimiento" asp-action="Index">Inventario</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="OrdenVenta" asp-action="Index">Órdenes de Venta</a>
                             </li>
                         }
                     </ul>

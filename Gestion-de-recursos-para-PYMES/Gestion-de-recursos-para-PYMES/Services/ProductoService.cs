@@ -53,5 +53,26 @@ namespace Gestion_de_recursos_para_PYMES.Services
 
             return new ProductoViewModel { Categorias = categorias };
         }
+        public List<Producto> Buscar(string termino)
+        {
+            var productos = _productoRepository.ObtenerTodos();
+
+            if (!string.IsNullOrEmpty(termino))
+            {
+                termino = termino.ToLower();
+                productos = productos
+                    .Where(p => p.Nombre.ToLower().Contains(termino))
+                    .ToList();
+            }
+
+            return productos;
+        }
+
+        public List<Producto> ObtenerEnStockMinimo()
+        {
+            return _productoRepository.ObtenerTodos()
+                .Where(p => p.Existencias <= p.ExistenciasMinimas)
+                .ToList();
+        }
     }
 }

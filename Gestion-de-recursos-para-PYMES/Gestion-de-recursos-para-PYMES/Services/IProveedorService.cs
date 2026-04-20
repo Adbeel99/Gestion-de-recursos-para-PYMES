@@ -9,5 +9,6 @@ namespace Gestion_de_recursos_para_PYMES.Services
         void Eliminar(int id);
         Proveedor ObtenerPorId(int id);
         List<Proveedor> ObtenerTodos();
+
     }
 }

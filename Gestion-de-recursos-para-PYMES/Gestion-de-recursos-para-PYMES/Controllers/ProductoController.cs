@@ -21,6 +21,11 @@ namespace Gestion_de_recursos_para_PYMES.Controllers
         public IActionResult Index()
         {
             var productos = _productoService.ObtenerTodos();
+            var alertaStock = _productoService.ObtenerEnStockMinimo()
+                .Select(p => p.Nombre)
+                .ToList();
+
+            ViewBag.AlertaStock = alertaStock;
             return View(productos);
         }
 
@@ -75,16 +80,7 @@ namespace Gestion_de_recursos_para_PYMES.Controllers
         [HttpGet("buscar")]
         public IActionResult Buscar(string termino)
         {
-            var productos = _productoService.ObtenerTodos();
-
-            if (!string.IsNullOrEmpty(termino))
-            {
-                termino = termino.ToLower();
-
-                productos = productos
-                    .Where(p => p.Nombre.ToLower().Contains(termino))
-                    .ToList();
-            }
+            var productos = _productoService.Buscar(termino);
 
             var resultado = productos.Select(p => new
             {
