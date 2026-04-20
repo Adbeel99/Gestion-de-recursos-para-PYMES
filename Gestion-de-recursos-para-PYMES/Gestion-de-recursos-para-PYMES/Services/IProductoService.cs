@@ -11,5 +11,7 @@ namespace Gestion_de_recursos_para_PYMES.Services
         List<Producto> ObtenerTodos();
         List<Producto> Buscar(string termino);
         ProductoViewModel ObtenerProductoViewModel();
+
+        List<Producto> ObtenerEnStockMinimo();
     }
 }
