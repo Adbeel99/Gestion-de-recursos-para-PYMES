@@ -4,7 +4,14 @@
 }
 
 <h2 class="mb-3">Clientes</h2>
-<a asp-action="Create" class="btn btn-success mb-3">+ Registrar nuevo cliente</a>
+
+<a asp-action="Create" class="btn btn-success mb-3">
+    + Registrar nuevo cliente
+</a>
+
+<div class="mb-3">
+    <input type="text" id="busquedaCliente" class="form-control" placeholder="Buscar cliente..." />
+</div>
 
 <table class="table table-striped">
     <thead>
@@ -18,7 +25,7 @@
             <th></th>
         </tr>
     </thead>
-    <tbody>
+    <tbody id="tablaClientes">
         @foreach (var cliente in Model)
         {
             <tr>
@@ -39,3 +46,48 @@
         }
     </tbody>
 </table>
+
+@section Scripts {
+    <script>
+        const input = document.getElementById("busquedaCliente");
+        const tabla = document.getElementById("tablaClientes");
+
+        input.addEventListener("keyup", async () => {
+            const termino = input.value;
+
+            const response = await fetch(`/Cliente/Buscar?termino=${termino}`);
+            const data = await response.json();
+
+            tabla.innerHTML = "";
+
+            if (data.length === 0) {
+                tabla.innerHTML = `
+                    <tr>
+                        <td colspan="7" class="text-center text-muted">
+                            No se encontraron clientes
+                        </td>
+                    </tr>
+                `;
+                return;
+            }
+
+            data.forEach(c => {
+                tabla.innerHTML += `
+                    <tr>
+                        <td>${c.nombre ?? ""}</td>
+                        <td>${c.apellido ?? ""}</td>
+                        <td>${c.empresa ?? ""}</td>
+                        <td>${c.email ?? ""}</td>
+                        <td>${c.telefono ?? ""}</td>
+                        <td>${c.direccion ?? ""}</td>
+                        <td>
+                            <a href="/Cliente/Details/${c.id}" class="btn btn-primary btn-sm">
+                                Ver detalle
+                            </a>
+                        </td>
+                    </tr>
+                `;
+            });
+        });
+    </script>
+}
