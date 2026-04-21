@@ -1,0 +1,13 @@
+## Carpetas de Visual Studio y Compilación
+.vs/
+[Bb]in/
+[Oo]bj/
+
+## Archivos de usuario y temporales
+*.user
+*.suo
+*.userosscache
+*.sln.docu
+
+## Archivos de publicación
+publish/
